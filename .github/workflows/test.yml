@@ -1,1 +1,12 @@
+name: test docker actions
+on: workflow_dispatch
+   
 
+jobs:
+  my_docker_job:
+    runs-on:
+        ubuntu-latest
+    steps:
+      - name: test
+        run: echo 'hello'
+      
