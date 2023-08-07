@@ -6,6 +6,13 @@ jobs:
     runs-on:
         ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: test
-        run: echo 'hello'
+        run: echo 'running docker container...'
+      - uses: './'
+        with: 
+          
+      
+        
+      
       
